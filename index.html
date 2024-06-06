@@ -7,27 +7,21 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <div class="card">
-		<div class="imgBox">
-			<div class="bark"></div>
-			<img src="./assets/img/Brown & Beige Modern Happy Birthday Flyer (A4).png">
-		</div>
-		<div class="details">
-			<!-- <h4 class="color1">You're not a Fossil! (YET)</h2> -->
-			<!-- <h4 class="color2 margin">(HAPPY BIRTHDAY)</h3> -->
-			<!-- <p>Dear Mum,</p>
-			<p>Let's see.. .</p>
-			<p>You’re the best Mother, sister, wife, teacher,sunday school teacher</p>
-			<p>Any one of us would ever have asked for!</p>
-			<p>year after year, i usually </p>
-			<p>like, and yet somehow you still</p>
-			<p>manage to be the best dad every year.</p>
-			<p>How do you do that? :)</p> -->
-            <h3>You're the best mother, sister, wife, teacher, and Sunday school teacher </h3>anyone of us could ever have asked for! Year after year, I watch you give yourself fully for your family, friends, and job. You're a hard worker, humble, a selfless giver, full of wisdom and love.  Lol, yes, you still shout at Tega a lot [;)]  This is only here for jokes, of course. I wouldn't trade you for anything.
-            </p>
-			<p class="text-right">Happy Birthday, Mama!</p>
-			<p class="text-right">♥Ewherhe</p>
-		</div>
-	</div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="imgBox">
+            <div class="bark"></div>
+            <img src="./assets/img/Brown & Beige Modern Happy Birthday Flyer (A4).png" alt="Birthday Image">
+        </div>
+        <div class="details">
+            <h3>You're the best mother, sister, wife, teacher, and Sunday school teacher anyone of us could ever have asked for! Year after year, I watch you give yourself fully for your family, friends, and job. You're a hard worker, humble, a selfless giver, full of wisdom and love. Lol, yes, you still shout at Tega a lot 😉 This is only here for jokes, of course. I wouldn't trade you for anything.</h3>
+            <p class="text-right">Happy Birthday, Mama!</p>
+            <p class="text-right">♥ Ewherhe</p>
+        </div>
+    </div>
+    <script>
+        function toggleCard(){
+            card.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
