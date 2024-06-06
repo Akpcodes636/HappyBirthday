@@ -19,9 +19,19 @@
         </div>
     </div>
     <script>
-        function toggleCard(){
+        
+        function toggleCard(event) {
+            event.stopPropagation();
+            const card = event.currentTarget;
             card.classList.toggle('active');
         }
+
+        document.addEventListener('click', function(event) {
+            const card = document.querySelector('.card');
+            if (card.classList.contains('active') && !card.contains(event.target)) {
+                card.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
